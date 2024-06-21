@@ -422,13 +422,14 @@ body{
         display: flex;
         flex-direction: row;
         gap: 1rem;
-        width: 100vw;
+        width: 98vw;
         height: 90vh;
         overflow-x: auto;
         white-space: nowrap;
         padding: 1rem;
         position: fixed;
         top: 7vh;
+        width: 1vw;
     }
 
     .starpaper{
