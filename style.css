@@ -9,7 +9,7 @@ html{
 
 body{
     padding: 1rem;
-    height: 95vh;
+    height: 90vh;
     background-color: rgb(0, 0, 0);
     background-image: linear-gradient(#292a30 .1rem, transparent .1rem), 
     linear-gradient(90deg, #292a30 .1rem, transparent .1rem);
@@ -225,7 +225,7 @@ body{
     #menu {
         position: fixed;
         top: 5vh;
-        right: 10vw;
+        right: 5vw;
         width: 3rem;
         height: 3rem;
         cursor: pointer;
@@ -263,7 +263,6 @@ body{
         transform: rotate(90deg) translateX(0rem);
     }
 
-    /* sliding menu */
     #menuContainer {
         position: relative;
     }
@@ -277,11 +276,13 @@ body{
         top: 0;
         left: 0;
         height: 100vh;
-        width: 80vw;
+        width: 100vw;
         background-color: rgba(0, 0, 0, 0.9);
         transform: translateX(-100%);
         transition: transform 0.3s ease;
         z-index: 999;
+        justify-content: center;
+        align-items: center;
     }
 
     #menuToggle:checked ~ .menuCurtain {
@@ -302,6 +303,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         height: 100vh;
         width: 100vw;
         margin: auto;
@@ -329,7 +331,7 @@ body{
         border-bottom: 2px solid rgb(240, 240, 240);
         padding-top: 1rem;
         padding-bottom: 1rem;
-        width: 100vw;
+        width: 80vw;
         margin: auto;
     }
 
@@ -358,17 +360,12 @@ body{
 
     .circle {
         border-radius: 100px;
-        height: 1rem;
-        width: 1rem;
+        height: 2rem;
+        width: 2rem;
         padding: 0;
-        margin: 0.2rem;
+        margin: 0.5rem 0.2rem;
         border: 0.1rem solid transparent;
         transition: transform 0.2s;
-    }
-
-    .circle:hover {
-        transform: scale(1.2);
-        border: 0.1rem solid rgb(240, 240, 240);
     }
 
     .circle.active {
@@ -429,10 +426,6 @@ body{
         transition: transform 0.5s ease;
     }
 
-    .starpaper img:hover {
-        transform: scale(2); /* Zoom in on hover */
-    }
-
     #imageOverlay {
         display: none;
         position: fixed;
@@ -449,7 +442,7 @@ body{
     
     #imageOverlay img {
         width: auto;
-        height: 175vh;
-        transform: rotate(270deg);
+        height: 100vh;
+        transform: scale(2);
     }
 }
