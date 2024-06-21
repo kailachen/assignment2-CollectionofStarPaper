@@ -383,7 +383,7 @@ body{
 
     .circle.active {
         transform: scale(1.2);
-        border: 0.1rem solid rgb(240, 240, 240);
+        border: 0.3rem solid rgb(240, 240, 240);
     }
 
     #white {
