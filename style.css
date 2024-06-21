@@ -41,6 +41,10 @@ body{
         display: block;
     }
 
+    #menuToggle {
+        display: none;
+    }
+
     #BtnContainer {
         display: flex;
         flex-direction: column;
