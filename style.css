@@ -77,6 +77,14 @@ body{
         width: 10vw;
     }
 
+    .colourgroup{
+        border-bottom: 2px solid rgb(240, 240, 240);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 0.5rem;
+        width: 10vw;
+    }
+
     .btn:hover{
         background-color: #d0d0d0;
         color: rgb(0, 0, 0);
@@ -97,6 +105,7 @@ body{
         letter-spacing: 0.04em;
         color: rgb(240, 240, 240);
         margin-left: 0.2rem;
+        margin-bottom: 0.5rem;
         padding-bottom: 1rem;
     }
 
@@ -108,13 +117,6 @@ body{
         margin: 0.2rem;
         border: 0.1rem solid transparent;
         transition: transform 0.2s;
-    }
-
-    .circlegroup{
-        border-bottom: 2px solid rgb(240, 240, 240);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        width: 10vw;
     }
 
     .circle:hover {
@@ -163,13 +165,13 @@ body{
         display: flex;
         flex-direction: row;
         gap: 1rem;
-        width: calc(100% - 10vw);
+        width: calc(100% - 13vw);
         overflow-x: auto;
         white-space: nowrap;
         padding: 1rem;
         flex: 1;/* fills out the remaining space */
-        position: absolute;
-        margin-left: 10vw;
+        position: fixed;
+        margin-left: 11vw;
         top: 8vh;
     }
 
@@ -216,6 +218,12 @@ body{
         font-style: normal;
         color: whitesmoke;
         font-size: 2.5em;
+    }
+
+    #title{
+        position: fixed;
+        top: 3vh;
+        left: 5vw;
     }
 
     p{
@@ -411,9 +419,12 @@ body{
         flex-direction: row;
         gap: 1rem;
         width: 100vw;
+        height: 90vh;
         overflow-x: auto;
         white-space: nowrap;
         padding: 1rem;
+        position: fixed;
+        top: 7vh;
     }
 
     .starpaper{

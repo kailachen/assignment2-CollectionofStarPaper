@@ -10,8 +10,8 @@
     <title>Collection of Collections</title>
 </head>
 <body>
-    <div>
-        <h1>Collection of Collections</h1>
+    <div id="title">
+        <h1>Collection of Stars</h1>
     </div>
     <section>
         <div id="menuContainer">
@@ -22,11 +22,13 @@
         
             <div id="BtnContainer" class="menuCurtain">
             <div>
-                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                <!-- <button class="btn" onclick="sortAlphabetically()">Alphabetically</button> -->
-                <button class="btn" onclick="sortByColor()">Sort by Color</button>
-
                 <div class="group">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <!-- <button class="btn" onclick="sortAlphabetically()">Alphabetically</button> -->
+                    <button class="btn" onclick="sortByColor()">Sort by Color</button>
+                </div>
+
+                <div class="colourgroup">
                     <span id="filterTitle">Paper Colours</span>
                     <div id="circleSection">
                         <button class="btn circle" id="white" onclick="filterSelection('white')"></button>
