@@ -429,7 +429,7 @@ body{
         padding: 1rem;
         position: fixed;
         top: 7vh;
-        width: 1vw;
+        left: 1vw;
     }
 
     .starpaper{
