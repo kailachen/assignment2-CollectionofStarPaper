@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="https://use.typekit.net/itg8doj.css">
+	
+    <title>Collection of Collections</title>
+</head>
+<body>
+    <div>
+        <h1>Collection of Collections</h1>
+    </div>
+    <section>
+        <div id="menuContainer">
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" id="menu">
+                <div class="hamburger"></div>
+            </label>
+        
+            <div id="BtnContainer" class="menuCurtain">
+            <div>
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <!-- <button class="btn" onclick="sortAlphabetically()">Alphabetically</button> -->
+                <button class="btn" onclick="sortByColor()">Color</button>
+
+                <div class="group">
+                    <span id="filterTitle">Paper Colours</span>
+                    <div id="circleSection">
+                        <button class="btn circle" id="white" onclick="filterSelection('white')"></button>
+                        <button class="btn circle" id="pink" onclick="filterSelection('pink')"></button>
+                        <button class="btn circle" id="red" onclick="filterSelection('red')"></button>
+                        <button class="btn circle" id="orange" onclick="filterSelection('orange')"></button>
+                        <button class="btn circle" id="yellow" onclick="filterSelection('yellow')"></button>
+                        <button class="btn circle" id="green" onclick="filterSelection('green')"></button>
+                        <button class="btn circle" id="blue" onclick="filterSelection('blue')"></button>
+                        <button class="btn circle" id="purple" onclick="filterSelection('purple')"></button>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <button class="btn" onclick="filterSelection('onecolour')">Solid Colour</button>
+                    <button class="btn" onclick="filterSelection('glossy')">Glossy</button>
+                    <button class="btn" onclick="filterSelection('duoDesign')">2 Designs</button>
+                </div>
+
+                <div class="group">
+                    <button class="btn" onclick="filterSelection('animals')">Animals</button>
+                    <button class="btn" onclick="filterSelection('characters')">Characters</button>
+                    <!-- <button class="btn" onclick="filterSelection('paulFrank')">Paul Frank</button> -->
+                    <button class="btn" onclick="filterSelection('zodiac')">Zodiac</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="starpaper-container">
+            <div class="starpaper filterDiv pink gold duoDesign">
+                <img src="images/2pattern/girlduopink.png" alt="girl two design">
+            </div>
+            <div class="starpaper filterDiv yellow duoDesign">
+                <img src="images/2pattern/heartsduoyellow.png" alt="hearts two design">
+            </div>
+
+            <div class="starpaper filterDiv purple animals duoDesign">
+                <img src="images/animals/catandmousepurple.png" alt="Cat & Mouse two design">
+            </div>
+            <div class="starpaper filterDiv pink animals">
+                <img src="images/animals/monkeypink1.png" alt="Monkey Pink">
+            </div>
+            <div class="starpaper filterDiv pink animals">
+                <img src="images/animals/monkeypink2.png" alt="Monkey Pink">
+            </div>
+            <div class="starpaper filterDiv purple animals">
+                <img src="images/animals/monkeypurple1.png" alt="Monkey Purple">
+            </div>
+            <div class="starpaper filterDiv white animals">
+                <img src="images/animals/monkeywhite1.png" alt="Monkey White">
+            </div>
+            <div class="starpaper filterDiv white animals">
+                <img src="images/animals/monkeywhite2.png" alt="Monkey White">
+            </div>
+            <div class="starpaper filterDiv white animals">
+                <img src="images/animals/monkeywhite3.png" alt="Monkey White">
+            </div>
+            <div class="starpaper filterDiv orange yellow animals">
+                <img src="images/animals/monkeyyellow1.png" alt="Monkey Yellow">
+            </div>
+            <div class="starpaper filterDiv yellow animals">
+                <img src="images/animals/monkeyyellow2.png" alt="Monkey Yellow">
+            </div>
+
+            <div class="starpaper filterDiv yellow">
+                <img src="images/characters/hellokittyyellow.png" alt="Hello Kitty yellow">
+            </div>
+            <div class="starpaper filterDiv yellow">
+                <img src="images/characters/idkyellow.png" alt="Girl Yellow">
+            </div>
+            <div class="starpaper filterDiv yellow characters disney">
+                <img src="images/characters/mickeyyellow.png" alt="Mickey Mouse">
+            </div>
+            <div class="starpaper filterDiv blue characters disney">
+                <img src="images/characters/minnieblue.png" alt="Minnie Mouse">
+            </div>
+            <div class="starpaper filterDiv blue characters paulFrank">
+                <img src="images/characters/paulFrankblue1.png" alt="Paul Frank Blue 1">
+            </div>
+            <div class="starpaper filterDiv pink characters paulFrank">
+                <img src="images/characters/paulFrankpink1.png" alt="Paul Frank Pink 2">
+            </div>
+            <div class="starpaper filterDiv pink characters paulFrank">
+                <img src="images/characters/paulFrankpink2.png" alt="Paul Frank Pink 3">
+            </div>
+            <div class="starpaper filterDiv purple characters paulFrank">
+                <img src="images/characters/paulFrankpurple1.png" alt="Paul Frank Purple 4">
+            </div>
+            <div class="starpaper filterDiv white characters paulFrank">
+                <img src="images/characters/paulFrankwhite1.png" alt="Paul Frank White 5"> 
+            </div>
+            <div class="starpaper filterDiv white characters paulFrank">
+                <img src="images/characters/paulFrankwhite2.png" alt="Paul Frank White 6">
+            </div>
+            <div class="starpaper filterDiv yellow characters paulFrank">
+                <img src="images/characters/paulFrankyellow1.png" alt="Paul Frank Yellow 7">
+            </div>
+            <div class="starpaper filterDiv green characters snoopy">
+                <img src="images/characters/snoopygreen.png" alt="Snoopy Green">
+            </div>
+            <div class="starpaper filterDiv blue purple characters snoopy">
+                <img src="images/characters/snoopypurple.png" alt="Snoopy Purple">
+            </div>
+            <div class="starpaper filterDiv pink characters winnie">
+                <img src="images/characters/winnieandpigletpink.png" alt="Winnie the Pooh and Piglet">
+            </div>
+            <div class="starpaper filterDiv blue characters winnie">
+                <img src="images/characters/winniethepoohblue.png" alt="Winnie the Pooh">
+            </div>
+            
+            <div class="starpaper filterDiv glossy blue">
+                <img src="images/glossy/glossybluebubblehearts.png" alt="Glossy Blue Bubble Hearts">
+            </div>
+            <div class="starpaper filterDiv glossy blue">
+                <img src="images/glossy/glossybluehearts.png" alt="Glossy Blue Hearts">
+            </div>
+            <div class="starpaper filterDiv glossy blue">
+                <img src="images/glossy/glossybluestars.png" alt="Glossy Blue Stars">
+            </div>
+            <div class="starpaper filterDiv glossy blue">
+                <img src="images/glossy/glossybluewords.png" alt="Glossy Blue Words">
+            </div>
+            <div class="starpaper filterDiv glossy green">
+                <img src="images/glossy/glossygreenbubblehearts.png" alt="Glossy Green Bubble Hearts">
+            </div>
+            <div class="starpaper filterDiv glossy green">
+                <img src="images/glossy/glossygreenhearts.png" alt="Glossy Green Hearts">
+            </div>
+            <div class="starpaper filterDiv glossy red">
+                <img src="images/glossy/glossyredhearts.png" alt="Glossy Red Hearts">
+            </div>
+            <div class="starpaper filterDiv glossy red">
+                <img src="images/glossy/glossyredstars.png" alt="Glossy Red Stars">
+            </div>
+            <div class="starpaper filterDiv glossy red">
+                <img src="images/glossy/glossyredwords.png" alt="Glossy Red Words">
+            </div>
+            <div class="starpaper filterDiv glossy blue">
+                <img src="images/glossy/shinyblue.png" alt="Glossy Blue">
+            </div>
+            <div class="starpaper filterDiv glossy pink">
+                <img src="images/glossy/shinylightpink.png" alt="Glossy Light Pink">
+            </div>
+            <div class="starpaper filterDiv glossy pink">
+                <img src="images/glossy/shinypink.png" alt="Glossy Pink">
+            </div>
+            <div class="starpaper filterDiv glossy purple">
+                <img src="images/glossy/shinypurple.png" alt="Glossy Purple">
+            </div>
+
+            <div class="starpaper filterDiv onecolour purple">
+                <img src="images/solidcolour/1lightpurple.png" alt="light purple">
+            </div>
+            <div class="starpaper filterDiv onecolour purple">
+                <img src="images/solidcolour/2mediumpurple.png" alt="medium purple">
+            </div>
+            <div class="starpaper filterDiv onecolour purple">
+                <img src="images/solidcolour/3darkpurple.png" alt="dark purple">
+            </div>
+
+            <div class="starpaper filterDiv pink zodiac">
+                <img src="images/zodiacs/aquariuspink.png" alt="zodiac aquarius">
+            </div>
+            <div class="starpaper filterDiv blue zodiac">
+                <img src="images/zodiacs/librablue.png" alt="zodiac libra">
+            </div>
+            <div class="starpaper filterDiv green zodiac">
+                <img src="images/zodiacs/scorpiogreen.png" alt="zodiac scorpio">
+            </div>
+            <div class="starpaper filterDiv yellow zodiac">
+                <img src="images/zodiacs/virgoyellow.png" alt="zodiac virgo">
+            </div>
+
+
+            <div class="starpaper filterDiv blue">
+                <img src="images/blessingyoublue.png" alt="Blessing You blue">
+            </div>
+        </div>
+        <div id="imageOverlay" onclick="closeOverlay()">
+            <img src="" alt="Overlay Image">
+        </div>
+    </section>
+      <script src="script.js"></script>
+</body>
+</html>
