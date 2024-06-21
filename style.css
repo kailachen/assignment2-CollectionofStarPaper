@@ -17,6 +17,10 @@ body{
     overflow-x: auto;
 }
 
+.checkbox {
+    appearance: none;
+}
+
 @media (min-width: 701px) {
     h1{
         font-family: p22-freely, sans-serif;
@@ -221,6 +225,13 @@ body{
         color: whitesmoke;
     }
 
+    #menuToggle {
+        display: none;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
     /* menu icon */
     #menu {
         position: fixed;
@@ -265,10 +276,6 @@ body{
 
     #menuContainer {
         position: relative;
-    }
-
-    #menuToggle {
-        display: none;
     }
 
     .menuCurtain {
