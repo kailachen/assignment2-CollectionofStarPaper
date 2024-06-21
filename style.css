@@ -17,9 +17,6 @@ body{
     overflow-x: auto;
 }
 
-.checkbox {
-    appearance: none;
-}
 
 @media (min-width: 701px) {
     h1{
