@@ -54,22 +54,23 @@ function sortByColor() {
       return aColor - bColor;
   });
 
-  // Append items back to the container in sorted order
+  // puts items back to the container in sorted order
   items.forEach(item => container.appendChild(item));
 }
+
 
 function sortAlphabetically() {
   const container = document.querySelector('.starpaper-container');
   const items = Array.from(container.getElementsByClassName('starpaper'));
 
-  // Sort items based on the alphabetical order of the alt attribute of the img tag
+  // sort items based on the alphabetical order of the alt attribute of the img tag
   items.sort((a, b) => {
       const aText = a.querySelector('img').alt.toLowerCase();
       const bText = b.querySelector('img').alt.toLowerCase();
       return aText.localeCompare(bText);
   });
 
-  // Append items back to the container in sorted order
+  // puts items back to the container in sorted order
   items.forEach(item => container.appendChild(item));
 }
 
@@ -101,7 +102,7 @@ function closeOverlay() {
 }
 
 
-// menu for mobile
+// menuCurtin
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
   }
